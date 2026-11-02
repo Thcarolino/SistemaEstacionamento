@@ -44,17 +44,17 @@ while (minutos != -1)
     if (minutos <= 60)
     {
         curta++;
-        Console.WriteLine("Categoria: Curta permanência");
+        Console.WriteLine("Categoria: Rotativa Curta");
     }
     else if (minutos <= 180)
     {
         media++;
-        Console.WriteLine("Categoria: Média permanência");
+        Console.WriteLine("Categoria: Padrão");
     }
     else
     {
         longa++;
-        Console.WriteLine("Categoria: Longa permanência");
+        Console.WriteLine("Categoria: Diária");
     }
 
     total++;
@@ -65,9 +65,9 @@ while (minutos != -1)
 // Relatório final
 Console.WriteLine();
 Console.WriteLine("========== RELATÓRIO FINAL ==========");
-Console.WriteLine($"Curta permanência: {curta} veículo(s)");
-Console.WriteLine($"Média permanência: {media} veículo(s)");
-Console.WriteLine($"Longa permanência: {longa} veículo(s)");
+Console.WriteLine($"Rotativa Curta: {curta} veículo(s)");
+Console.WriteLine($"Padrão: {media} veículo(s)");
+Console.WriteLine($"Diária: {longa} veículo(s)");
 Console.WriteLine("-------------------------------------");
 Console.WriteLine($"Total de veículos: {total}");
 Console.WriteLine("=====================================");
