@@ -118,15 +118,15 @@ static void ClassificarPermanencia()
 
     if (minutos <= 60)
     {
-        categoria = "Curta permanência";
+        categoria = "Rotativa Curta";
     }
     else if (minutos <= 180)
     {
-        categoria = "Média permanência";
+        categoria = "Padrão";
     }
     else
     {
-        categoria = "Longa permanência";
+        categoria = "Diária";
     }
 
     Console.WriteLine($"Classificação: {categoria}");
@@ -170,17 +170,17 @@ static void ContarVeiculos()
         if (minutos <= 60)
         {
             curta++;
-            Console.WriteLine("Categoria: Curta");
+            Console.WriteLine("Categoria: Rotativa Curta");
         }
         else if (minutos <= 180)
         {
             media++;
-            Console.WriteLine("Categoria: Média");
+            Console.WriteLine("Categoria: Padrão");
         }
         else
         {
             longa++;
-            Console.WriteLine("Categoria: Longa");
+            Console.WriteLine("Categoria: Diária");
         }
     }
 
@@ -188,9 +188,9 @@ static void ContarVeiculos()
 
     Console.WriteLine();
     Console.WriteLine("=== RELATÓRIO FINAL ===");
-    Console.WriteLine($"Curta permanência: {curta}");
-    Console.WriteLine($"Média permanência: {media}");
-    Console.WriteLine($"Longa permanência: {longa}");
+    Console.WriteLine($"Rotativa Curta: {curta}");
+    Console.WriteLine($"Padrão: {media}");
+    Console.WriteLine($"Diária: {longa}");
     Console.WriteLine($"Total de veículos: {total}");
 }
 
