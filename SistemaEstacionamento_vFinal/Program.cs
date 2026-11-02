@@ -12,7 +12,7 @@ do
     Console.WriteLine("1 - Calcular tarifa");
     Console.WriteLine("2 - Classificar permanência");
     Console.WriteLine("3 - Contar veículos por categoria");
-    Console.WriteLine("4 - Informações do ambiente .NET");
+    Console.WriteLine("4 - Sobre");
     Console.WriteLine("0 - Sair");
     Console.WriteLine("========================================");
     Console.Write("Escolha uma opção: ");
