@@ -107,15 +107,15 @@ static void ClassificarPermanencia()
 
     if (minutos <= 60)
     {
-        Console.WriteLine("Categoria: Curta permanência");
+        Console.WriteLine("Categoria: Rotativa Curta");
     }
     else if (minutos <= 180)
     {
-        Console.WriteLine("Categoria: Média permanência");
+        Console.WriteLine("Categoria: Padrão");
     }
     else
     {
-        Console.WriteLine("Categoria: Longa permanência");
+        Console.WriteLine("Categoria: Diária");
     }
 }
 
@@ -169,9 +169,9 @@ static void ContarVeiculos()
 
     Console.WriteLine();
     Console.WriteLine("=== RELATÓRIO DE VEÍCULOS ===");
-    Console.WriteLine($"Curta permanência: {curta}");
-    Console.WriteLine($"Média permanência: {media}");
-    Console.WriteLine($"Longa permanência: {longa}");
+    Console.WriteLine($"Rotativa Curta: {curta}");
+    Console.WriteLine($"Padrão: {media}");
+    Console.WriteLine($"Diária: {longa}");
     Console.WriteLine($"Total: {curta + media + longa}");
 }
 
